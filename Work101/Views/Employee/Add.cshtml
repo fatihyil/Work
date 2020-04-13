@@ -1,0 +1,52 @@
+﻿@model EmployeeVM
+@{
+    ViewData["Title"] = "Add";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h1>Çalışan Ekle</h1>
+
+
+@using (Html.BeginForm(FormMethod.Post))
+{
+    <div class="container p-5 border border-dark">
+
+        <div class="form-group row justify-content-md-center">
+            @Html.LabelFor(x => x.IdentityNumber, "TC", new { @class = "col-2 col-form-label" })
+            @Html.TextBoxFor(x => x.IdentityNumber, new { @class = "col-4" })
+        </div>
+        <div class="form-group row justify-content-md-center">
+            @Html.LabelFor(x => x.FirstName, "Ad", new { @class = "col-2 col-form-label" })
+            @Html.TextBoxFor(x => x.FirstName, new { @class = "col-4" })
+        </div>
+        <div class="form-group row justify-content-md-center">
+            @Html.LabelFor(x => x.LastName, "Soyad", new { @class = "col-2 col-form-label" })
+            @Html.TextBoxFor(x => x.LastName, new { @class = "col-4" })
+        </div>
+        <div class="form-group row justify-content-md-center">
+            @Html.LabelFor(x => x.EmployeeNumber, "Çalışan Numarası", new { @class = "col-2 col-form-label" })
+            @Html.TextBoxFor(x => x.EmployeeNumber, new { @class = "col-4" })
+        </div>
+        <div class="form-group row justify-content-md-center">
+            @Html.LabelFor(x => x.PhoneNumber, "Telefon Numarası", new { @class = "col-2 col-form-label" })
+            @Html.TextBoxFor(x => x.PhoneNumber, new { @class = "col-4" })
+        </div>
+        <div class="form-group row justify-content-md-center">
+            @Html.LabelFor(x => x.Birthday, "Doğum Tarihi", new { @class = "col-2 col-form-label" })
+            @Html.TextBoxFor(x => x.Birthday, new { @class = "col-4" })
+        </div>
+
+        <div class="form-group row justify-content-md-center">
+            @Html.LabelFor(x => x.Address, "Adres", new { @class = "col-2 col-form-label" })
+            @Html.TextAreaFor(x => x.Address, new { @class = "col-4" })
+        </div>
+        <div class="form-group row justify-content-end mt-5">
+            <button class="btn btn-success" type="submit">Kaydet</button>
+        </div>
+        <div class="form-group row justify-content-end">
+            <a asp-controller="Employee" asp-action="Index">Çalışan Listesine Geri Dön</a>
+        </div>
+    </div>
+}
+
