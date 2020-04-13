@@ -70,21 +70,7 @@ namespace Work101.Controllers
                 EmployeeNumber = model.EmployeeNumber,
                 PhoneNumber = model.PhoneNumber
             };
-            _employeeService.Edit(employeeEntity);
-            //var updateEntity = _employeeService.Get(model.Id);
-            //return View(
-            //    new EmployeeVM
-            //    {
-            //        Id = updateEntity.Id,
-            //        FirstName = updateEntity.FirstName,
-            //        LastName = updateEntity.LastName,
-            //        Address = updateEntity.Address,
-            //        IdentityNumber = updateEntity.IdentityNumber,
-            //        EmployeeNumber = updateEntity.EmployeeNumber,
-            //        Birthday = updateEntity.Birthday,
-            //        PhoneNumber = updateEntity.PhoneNumber
-
-            //    });
+            _employeeService.Edit(employeeEntity);           
             return RedirectToAction("Index","Employee");
         }
         public IActionResult Delete(int id)
