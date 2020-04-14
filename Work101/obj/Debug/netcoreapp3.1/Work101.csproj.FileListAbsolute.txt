@@ -397,3 +397,4 @@ C:\Users\Fatih\Desktop\NET CORE\Work101\Work101\obj\Debug\netcoreapp3.1\Work101.
 C:\Users\Fatih\Desktop\NET CORE\Work101\Work101\obj\Debug\netcoreapp3.1\Razor\Views\Employee\Index.cshtml.g.cs
 C:\Users\Fatih\Desktop\NET CORE\Work101\Work101\obj\Debug\netcoreapp3.1\Razor\Views\Employee\Edit.cshtml.g.cs
 C:\Users\Fatih\Desktop\NET CORE\Work101\Work101\obj\Debug\netcoreapp3.1\Razor\Views\Employee\Add.cshtml.g.cs
+C:\Users\Fatih\Desktop\NET CORE\Work101\Work101\obj\Debug\netcoreapp3.1\Razor\Views\Student\Index.cshtml.g.cs

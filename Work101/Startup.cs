@@ -29,6 +29,7 @@ namespace Work101
             services.AddRazorPages().AddRazorRuntimeCompilation();
             services.AddSingleton<EmployeeContext>();
             services.AddSingleton<EmployeeService>();
+            services.AddScoped<StudentService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

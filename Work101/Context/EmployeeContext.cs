@@ -9,6 +9,7 @@ namespace Work101.Context
     public class EmployeeContext
     {
         public List<EmployeeEntity> Employees { get; set; }
+        public List<StudentEntity> Students { get; set; }
 
         public EmployeeContext()
         {
@@ -48,8 +49,30 @@ namespace Work101.Context
                     Birthday = "23021996"
                 }
             };
+
+            Students = new List<StudentEntity>
+            {
+                new StudentEntity()
+                {
+                    Id = 1,
+                    FirtsName = "Burak",
+                    LastName = "Güner",
+                    StudentNo = "555555",
+                    Birthday = "30041993",
+                    ClassNo = 4
+                },
+                new StudentEntity()
+                {
+                    Id =2,
+                    FirtsName = "Fatih",
+                    LastName = "YILMAZ",
+                    StudentNo = "525252",
+                    Birthday = "28011993",
+                    ClassNo = 4
+                }
+            };
         }
 
-
+       
     }
 }
