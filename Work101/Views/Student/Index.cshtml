@@ -33,8 +33,8 @@
                     <td>@item.Birthday</td>
                     <td>@item.ClassNo</td>
                     <td>
-                        <a asp-controller="Student" asp-action="Edit" class="ml-2"><i class="fas fa-edit"></i></a>
-                        <a asp-controller="Student" asp-action="Delete" class="ml-2"><i class="fas fa-trash-alt"></i></a>
+                        <a asp-controller="Student" asp-action="Edit" asp-route-id="@item.Id" class="ml-2"><i class="fas fa-edit"></i></a>
+                        <a asp-controller="Student" asp-action="Delete" asp-route-id="@item.Id" class="ml-2"><i class="fas fa-trash-alt"></i></a>
                     </td>
                 </tr>
             }
